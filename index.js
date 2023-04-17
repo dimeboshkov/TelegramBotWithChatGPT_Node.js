@@ -9,7 +9,7 @@ bot.start((ctx) => {
 })
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
