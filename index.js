@@ -2,14 +2,14 @@ const { Configuration, OpenAIApi } = require("openai");
 const { Telegraf } = require('telegraf')
 require('dotenv').config()
 
-const bot = new Telegraf("Telegram token looks like: 1231231234:sdfdDFSDfdfFGFGFgFgFGFgFg54FGFgFgFGF")
+const bot = new Telegraf("5948449419:AAEvvQWr7HUnEMagkIO-ARym3ImJ1PPBaPM")
 
 bot.start((ctx) => {
   ctx.reply('Welcome to my ChatGPT bot! Send me a message and I will generate a response for you.')
 })
 
 const configuration = new Configuration({
-  apiKey: "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxdxxxxx",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
