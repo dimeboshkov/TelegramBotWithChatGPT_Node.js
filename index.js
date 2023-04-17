@@ -28,7 +28,6 @@ bot.on('message', async (ctx) => {
       const user = ctx.from.first_name;
       console.log(`User ${user} says: ${ctx.message.text}\n`);
 
-      //console.log(openai.chatid)
       console.log(completion.data.choices[0].text);
       console.log('____________________________________________________\n \n')
       ctx.reply(completion.data.choices[0].text)
@@ -41,6 +40,5 @@ bot.on('message', async (ctx) => {
     console.log(error)
   }
 })
-
 
 bot.launch()
