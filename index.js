@@ -1,4 +1,4 @@
-const { Configuration, OpenAIApi } = require('openai');
+const { Configuration, OpenAIApi } = require("openai");
 const { Telegraf } = require('telegraf')
 require('dotenv').config()
 
