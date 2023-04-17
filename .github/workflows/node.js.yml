@@ -21,6 +21,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Run ChatGPT Bot
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
     - run: npm install
     - run: node index.js
     - name: Use Node.js ${{ matrix.node-version }}
